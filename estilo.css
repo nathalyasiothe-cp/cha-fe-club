@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#FAF8F6;
+    height: 80px;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 60px;
+    color: #452815;
+    font-family: "Imperial Script", cursive;
+    font-weight: normal;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid brown; */
+
+}
+
+.box-img 
+{ 
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 390px;
+    /* border: 1px solid blue; */
+}
+
+.box-txt 
+{ 
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    /* border: 1px solid green; */
+}
+
+.box-txt span { 
+    color: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+.box-txt h2 {
+    font-family: "Imperial Script", cursive;
+    font-size: 80px;
+    color: #452815;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+
+.box-txt p {
+    color:#A1887F;
+}
+
+.btn-hero { 
+background-color: #73411F ;
+padding: 25px 15px;
+text-decoration: none;
+ font-family: "Poppins", sans-serif;
+ color: #eee8e1;
+ border-radius: 9px;
+ transition: 0.5s all;
+ margin-bottom: 20px;
+ 
+}
+
+.btn-hero:hover {
+background-color: yellowgreen;
+font-size: 18px;
+font-weight: bold;
+
+} 
+
+.box-item {
+    width: 30%;
+    height: 400px;
+    background-color: #E0C4A0;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 20px;
+
+
+}
+
+.sobre-nós { 
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    text-align: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 80px;
+}
+
+.titulo-sobre {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-sobre hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.titulo-sobre h2 {
+    margin: 0 20px;
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    /* border: 1px solid brown; */
+
+}
+
+.m-top { 
+    margin-top: 15px;
+}
+
+.como-funciona {
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+ 
+.titulo-como {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #452815;
+    margin: 0 0 3rem;
+}
+ 
+.passos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+ 
+.passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    gap: 0.75rem;
+}
+ 
+.passo-icone {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E0C4A0;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+ 
+.passo h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #452815;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+ 
+.passo p {
+    font-size: 0.8rem;
+    color: #A1887F;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ---------- Novidades ---------- */
+ 
+.novidades {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    padding: 40px 0;
+}
+ 
+/* Reutiliza .titulo-sobre já existente no CSS — nenhuma mudança necessária */
+ 
+.sub-novidades {
+    width: 100%;
+    text-align: center;
+    color: #A1887F;
+    font-size: 0.95rem;
+    margin: 0.5rem 0 2rem;
+    letter-spacing: 1px;
+}
+ 
+/* Banner do mês */
+.banner-mes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FAF8F6;
+    border-left: 4px solid #73411F;
+    border-radius: 9px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+}
+ 
+.banner-icone {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+ 
+.banner-texto h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #452815;
+}
+ 
+.banner-texto p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #A1887F;
+    line-height: 1.5;
+}
+ 
+/* Grid de cards */
+.grid-novidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+ 
+.card-nov {
+    width: 30%;
+    min-width: 220px;
+    background-color: #E0C4A0;
+    border-radius: 18px;
+    overflow: hidden;
+}
+ 
+.card-nov-img {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+ 
+.card-amber { background-color: #d4a96a; }
+.card-teal  { background-color: #a8d5bc; }
+.card-coral { background-color: #d4a09a; }
+ 
+.card-nov-body {
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+ 
+.card-nov-body h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0.4rem 0;
+    color: #452815;
+}
+ 
+.card-nov-body p {
+    font-size: 0.85rem;
+    color: #5a3e2b;
+    line-height: 1.5;
+    margin: 0 0 0.75rem;
+}
+ 
+.card-nov-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+ 
+.card-data {
+    font-size: 0.75rem;
+    color: #8B6347;
+}
+ 
+/* Botão menor para os cards — herda o .btn-hero existente */
+.btn-card-sm {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+ 
+/* Badges */
+.badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+ 
+.badge-new { background: #c8e6c9; color: #1b5e20; }
+.badge-ltd { background: #ffe0b2; color: #7c4b00; }
+.badge-tip { background: #e8eaf6; color: #283593; }
+ 
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    border: 1px solid #E0C4A0;
+    border-radius: 9px;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #FAF8F6;
+}
+ 
+.newsletter p {
+    font-size: 0.9rem;
+    color: #A1887F;
+    margin: 0 0 1rem;
+}
+ 
+.nl-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.nl-row input {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    padding: 12px 14px;
+    border: 1px solid #E0C4A0;
+    border-radius: 9px;
+    background-color: #fff;
+    color: #452815;
+    width: 240px;
+    outline: none;
+    transition: border 0.3s;
+}
+ 
+.nl-row input:focus {
+    border-color: #73411F;
+}
+
+
+footer {
+    background-color: #eee8e1;
+    padding: 50px 10%;
+    margin-top: 100px;
+    color: #4E342E;
+}
+ 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+ 
+/* Marca */
+.footer-brand h2 {
+    font-family: "Imperial Script", cursive;
+    font-size: 40px;
+    color: #452815;
+    font-weight: normal;
+    margin: 0 0 0.5rem;
+}
+ 
+.footer-brand p {
+    font-size: 0.8rem;
+    color: #A1887F;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+/* Contato */
+.footer-contato h4,
+.footer-redes h4 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #452815;
+    margin: 0 0 1rem;
+    font-weight: 600;
+}
+ 
+.footer-contato p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #4E342E;
+    margin: 0 0 0.5rem;
+}
+ 
+.footer-contato svg {
+    flex-shrink: 0;
+    color: #73411F;
+}
+ 
+/* Redes sociais */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+ 
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #4E342E;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+ 
+.social-btn:hover {
+    color: #73411F;
+}
+ 
+.social-btn svg {
+    flex-shrink: 0;
+}
+ 
+.menu-hamburguer{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 4;
+
+}
+#menu-toggle { 
+    display: none;
+}
+.linha { 
+    height: 4px;
+    background-color: #361b0a;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.overlay { 
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 2;
+    transform: scale(0);
+    transition: 0.5s;
+
+}
+.menu-icon { 
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+
+
+}
+.menu { 
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+}
+.menu ul { 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu ul li { 
+margin: 20px 0;
+}
+.menu a { 
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ee975d;
+    transition:0.3s;
+}
+
+.menu a:hover { 
+    color: #73411F;
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(1)  { 
+    transform: rotate(45deg) translate(13px, 13px);
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(2)  { 
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(3)  { 
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#menu-toggle:checked ~.overlay { 
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1200px) {
+    .header h1 {
+        font-size: 45px;
+    }
+
+   .hero { 
+    flex-direction: column-reverse;
+   }
+
+   .box-txt {
+    flex-flow:column wrap;
+    width: 100%;
+    padding: 40px 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .box-txt h2 {
+    font-size: 50px;
+   }
+
+   .box-img {
+    width: 100%;
+    margin-bottom: 40px;
+   }
+
+   .responsiva { 
+    max-width: 100%;
+   }
+
+   .box-txt p {
+    text-align: center;
+   }
+
+   .box-item {
+    width: 90%;
+   }
+
+    .card-nov {
+        width: 90%;
+    }
+ 
+    .banner-mes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .passos {
+        gap: 3rem;
+    }
+ 
+    .passo {
+        max-width: 80%;
+    }
+ 
+    .card-nov-footer {
+        justify-content: center;
+        gap: 1rem;
+    }
+ 
+    .nl-row input {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 7%;
+    }
+ 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .footer-contato p {
+        justify-content: center;
+    }
+ 
+    .social-icons {
+        align-items: center;
+    }
+}
+
