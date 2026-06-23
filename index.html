@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chá-Fé Club</title>
-    <link rel="stylesheet" href="estilo.css">
 
+    <!-- jQuery + jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header> 
-        <h1> Chá-Fé Club </h1>
+
+    <header>
+        <h1>Chá-Fé Club</h1>
         <div class="menu-hamburguer">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -19,226 +25,596 @@
             </label>
             <div class="overlay">
                 <nav class="menu">
-                     <ul>
+                    <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#sobre-nos">sobre nós</a></li>
                         <li><a href="#especialidades">produtos</a></li>
                         <li><a href="#novidades">novidades</a></li>
+                        <li><a href="#cadastro">cadastro</a></li>
                         <li><a href="#fale-conosco">fale conosco</a></li>
-                     </ul>
+                    </ul>
                 </nav>
             </div>
-
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero" id="inicio">
         <div class="box-img">
-            <img class="responsiva" src="img/cafevertical.jpg">
+            <img class="responsiva" src="img/cafevertical.jpg" alt="Café">
         </div>
         <div class="box-txt">
-            <span>conheca nossos planos</span>
+            <span>conheça nossos planos</span>
             <h2>Faça parte do Chá-Fé Club</h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quidem minus voluptatem illo eveniet. Corrupti, ea quam fuga, atque unde,
-            quae numquam perspiciatis deleniti consequuntur consequatur officiis ullam sunt obcaecati eveniet? 
-            </p> 
-            <a href="#" class = "btn-hero"> Comprar Assinatura</a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quidem minus voluptatem illo eveniet. Corrupti, ea quam fuga, atque unde,
+                quae numquam perspiciatis deleniti consequuntur consequatur officiis ullam sunt obcaecati eveniet?
+            </p>
+            <a href="#cadastro" class="btn-hero">Comprar Assinatura</a>
         </div>
     </section>
 
+    <!-- SOBRE NÓS -->
     <section class="sobre-nós" id="sobre-nos">
-      <div class="titulo-sobre">
-    <hr>
-    <h2>SOBRE NÓS</h2>
-    <hr>
-</div>
+        <div class="titulo-sobre">
+            <hr>
+            <h2>SOBRE NÓS</h2>
+            <hr>
+        </div>
         <p>
-         O Club Café nasceu da nossa profunda paixão por selecionar grãos nobres e conectar pessoas através de experiências sensoriais únicas a cada xícara servida. Dedicamos nossos dias a explorar as principais regiões cafeeiras do país, trazendo direto do produtor variedades exclusivas e torras artesanais impecáveis. Nosso compromisso vai muito além do sabor marcante; buscamos criar um refúgio acolhedor e sofisticado para quem valoriza a verdadeira cultura do café. Como membro do nosso clube de assinaturas, você terá acesso prioritário a lotes limitados, workshops interativos e vantagens exclusivas em toda a loja. Descubra um universo de aromas complexos, notas florais e finalizações surpreendentes que vão transformar completamente o seu ritual matinal de energia. Seja muito bem-vindo ao nosso espaço e aproveite para explorar o menu completo que preparamos com tanto carinho para a sua próxima visita.
+            O Club Café nasceu da nossa profunda paixão por selecionar grãos nobres e conectar pessoas através de experiências sensoriais únicas a cada xícara servida. Dedicamos nossos dias a explorar as principais regiões cafeeiras do país, trazendo direto do produtor variedades exclusivas e torras artesanais impecáveis. Nosso compromisso vai muito além do sabor marcante; buscamos criar um refúgio acolhedor e sofisticado para quem valoriza a verdadeira cultura do café. Como membro do nosso clube de assinaturas, você terá acesso prioritário a lotes limitados, workshops interativos e vantagens exclusivas em toda a loja. Descubra um universo de aromas complexos, notas florais e finalizações surpreendentes que vão transformar completamente o seu ritual matinal de energia. Seja muito bem-vindo ao nosso espaço e aproveite para explorar o menu completo que preparamos com tanto carinho para a sua próxima visita.
         </p>
     </section>
+
+    <!-- ESPECIALIDADES -->
     <section class="especialidades" id="especialidades">
-        <div class ="box-item">
-            <h3> combo 01</h3>
-          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio! </p>
+        <div class="box-item">
+            <h3>combo 01</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio!</p>
         </div>
-        <div class ="box-item">
-            <h3> combo 02</h3>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio! </p>
+        <div class="box-item">
+            <h3>combo 02</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio!</p>
         </div>
-        <div class ="box-item">
-            <h3> combo 03</h3>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio! </p>
+        <div class="box-item">
+            <h3>combo 03</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas labore eos totam tempore animi, ipsam aliquam sint obcaecati, voluptatibus natus, repudiandae consequuntur magnam! Pariatur modi provident possimus cupiditate, explicabo distinctio!</p>
         </div>
-         <a href="#" class = "m-top btn-hero"> Comprar Assinatura</a>
+        <a href="#cadastro" class="m-top btn-hero">Comprar Assinatura</a>
     </section>
 
+    <!-- COMO FUNCIONA -->
     <section class="como-funciona" id="como-funciona">
- 
-    <h2 class="titulo-como">Como funciona a Assinatura Chá-Fé?</h2>
- 
-    <div class="passos">
- 
-        <div class="passo">
-            <div class="passo-icone">
-                <!-- xícara de café -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#452815" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M8 16h24v16a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8V16z"/>
-                    <path d="M32 20h4a4 4 0 0 1 0 8h-4"/>
-                    <line x1="8" y1="16" x2="32" y2="16"/>
-                    <path d="M16 8 Q17 5 16 3"/>
-                    <path d="M22 8 Q23 5 22 3"/>
-                </svg>
+        <h2 class="titulo-como">Como funciona a Assinatura Chá-Fé?</h2>
+        <div class="passos">
+            <div class="passo">
+                <div class="passo-icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#452815" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 16h24v16a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8V16z"/>
+                        <path d="M32 20h4a4 4 0 0 1 0 8h-4"/>
+                        <line x1="8" y1="16" x2="32" y2="16"/>
+                        <path d="M16 8 Q17 5 16 3"/>
+                        <path d="M22 8 Q23 5 22 3"/>
+                    </svg>
+                </div>
+                <h3>Escolha seu plano</h3>
+                <p>Selecione o combo ideal entre chás, cafés ou os dois juntos, na frequência que preferir.</p>
             </div>
-            <h3>Escolha seu plano</h3>
-            <p>Selecione o combo ideal entre chás, cafés ou os dois juntos, na frequência que preferir.</p>
-        </div>
- 
-        <div class="passo">
-            <div class="passo-icone">
-                <!-- caixa entrega -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#452815" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 16l18-8 18 8v20L24 44 6 36V16z"/>
-                    <path d="M6 16l18 8 18-8"/>
-                    <line x1="24" y1="24" x2="24" y2="44"/>
-                    <path d="M15 11.5l18 8"/>
-                </svg>
+            <div class="passo">
+                <div class="passo-icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#452815" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 16l18-8 18 8v20L24 44 6 36V16z"/>
+                        <path d="M6 16l18 8 18-8"/>
+                        <line x1="24" y1="24" x2="24" y2="44"/>
+                        <path d="M15 11.5l18 8"/>
+                    </svg>
+                </div>
+                <h3>Receba em casa</h3>
+                <p>Sua caixa chega com produtos selecionados, embalagem especial e surpresas exclusivas todo mês.</p>
             </div>
-            <h3>Receba em casa</h3>
-            <p>Sua caixa chega com produtos selecionados, embalagem especial e surpresas exclusivas todo mês.</p>
         </div>
- 
-    </div>
- 
-</section>
+    </section>
 
- <section class="novidades" id="novidades">
- 
-  <div class="titulo-sobre">
-    <hr>
-    <h2>NOVIDADES</h2>
-    <hr>
-  </div>
- 
-  <p class="sub-novidades">Lançamentos, dicas e surpresas do mês para assinantes</p>
- 
-  <!-- Banner destaque do mês -->
-  <div class="banner-mes">
-    <div class="banner-icone">📦</div>
-    <div class="banner-texto">
-      <h3>Caixa de julho chegando!</h3>
-      <p>Este mês: café natural da Chapada Diamantina + chá branco importado. Assinantes recebem em primeira mão.</p>
-    </div>
-  </div>
- 
-  <!-- Cards de novidades -->
-  <div class="grid-novidades">
- 
-    <div class="card-nov">
-      <div class="card-nov-img card-amber">☕</div>
-      <div class="card-nov-body">
-        <span class="badge badge-new">Lançamento</span>
-        <h3>Café Geisha — Lote Exclusivo</h3>
-        <p>Apenas 50 unidades disponíveis. Notas de jasmim e pêssego, torra clara especial.</p>
-        <div class="card-nov-footer">
-          <span class="card-data">Jun 2026</span>
-          <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
+    <!-- NOVIDADES -->
+    <section class="novidades" id="novidades">
+        <div class="titulo-sobre">
+            <hr>
+            <h2>NOVIDADES</h2>
+            <hr>
         </div>
-      </div>
-    </div>
- 
-    <div class="card-nov">
-      <div class="card-nov-img card-teal">🍃</div>
-      <div class="card-nov-body">
-        <span class="badge badge-ltd">Edição limitada</span>
-        <h3>Chá Matcha Premium</h3>
-        <p>Origem Japão. Ideal para lattes e receitas. Disponível somente para assinantes Ouro.</p>
-        <div class="card-nov-footer">
-          <span class="card-data">Mai 2026</span>
-          <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
-        </div>
-      </div>
-    </div>
- 
-    <div class="card-nov">
-      <div class="card-nov-img card-coral">🎓</div>
-      <div class="card-nov-body">
-        <span class="badge badge-tip">Workshop</span>
-        <h3>Curso: Preparo V60</h3>
-        <p>Aula online exclusiva para membros. Aprenda a extrair o melhor de cada grão.</p>
-        <div class="card-nov-footer">
-          <span class="card-data">Jul 2026</span>
-          <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
-        </div>
-      </div>
-    </div>
- 
-  </div>
- 
-  <!-- Newsletter -->
-  <div class="newsletter">
-    <p>Receba novidades direto no seu e-mail antes de todo mundo</p>
-    <div class="nl-row">
-      <input type="email" placeholder="seu@email.com" />
-      <button type="button" class="btn-hero">Assinar</button>
-    </div>
-  </div>
- 
-</section>
- 
-  <footer>
-    <div class="footer-container">
- 
-        <div class="footer-brand">
-            <h2>Chá-Fé Club</h2>
-            <p>© 2026 Club de assinaturas Chá-Fé.<br>Todos os direitos reservados.</p>
-        </div>
- 
-        <div class="footer-contato">
-            <h4>Contato</h4>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-                (21) 99999-9999
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.842L.057 23.428a.5.5 0 0 0 .609.61l5.652-1.484A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.513-5.163-1.408l-.36-.214-3.755.985.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                (21) 99999-9999
-            </p>
-        </div>
- 
-        <div class="footer-redes">
-            <h4>Redes Sociais</h4>
-            <div class="social-icons">
- 
-                <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram" class="social-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                    Instagram
-                </a>
- 
-                <a href="https://facebook.com/seuperfil" target="_blank" aria-label="Facebook" class="social-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
-                    Facebook
-                </a>
- 
-                <a href="https://wa.me/5521999999999" target="_blank" aria-label="WhatsApp" class="social-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.842L.057 23.428a.5.5 0 0 0 .609.61l5.652-1.484A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.513-5.163-1.408l-.36-.214-3.755.985.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                    WhatsApp
-                </a>
- 
+        <p class="sub-novidades">Lançamentos, dicas e surpresas do mês para assinantes</p>
+        <div class="banner-mes">
+            <div class="banner-icone">📦</div>
+            <div class="banner-texto">
+                <h3>Caixa de julho chegando!</h3>
+                <p>Este mês: café natural da Chapada Diamantina + chá branco importado. Assinantes recebem em primeira mão.</p>
             </div>
         </div>
- 
+        <div class="grid-novidades">
+            <div class="card-nov">
+                <div class="card-nov-img card-amber">☕</div>
+                <div class="card-nov-body">
+                    <span class="badge badge-new">Lançamento</span>
+                    <h3>Café Geisha — Lote Exclusivo</h3>
+                    <p>Apenas 50 unidades disponíveis. Notas de jasmim e pêssego, torra clara especial.</p>
+                    <div class="card-nov-footer">
+                        <span class="card-data">Jun 2026</span>
+                        <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-nov">
+                <div class="card-nov-img card-teal">🍃</div>
+                <div class="card-nov-body">
+                    <span class="badge badge-ltd">Edição limitada</span>
+                    <h3>Chá Matcha Premium</h3>
+                    <p>Origem Japão. Ideal para lattes e receitas. Disponível somente para assinantes Ouro.</p>
+                    <div class="card-nov-footer">
+                        <span class="card-data">Mai 2026</span>
+                        <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-nov">
+                <div class="card-nov-img card-coral">🎓</div>
+                <div class="card-nov-body">
+                    <span class="badge badge-tip">Workshop</span>
+                    <h3>Curso: Preparo V60</h3>
+                    <p>Aula online exclusiva para membros. Aprenda a extrair o melhor de cada grão.</p>
+                    <div class="card-nov-footer">
+                        <span class="card-data">Jul 2026</span>
+                        <a href="#" class="btn-hero btn-card-sm">Ver mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <p>Receba novidades direto no seu e-mail antes de todo mundo</p>
+            <div class="nl-row">
+                <input type="email" id="nl-email" placeholder="seu@email.com" />
+                <button type="button" class="btn-hero" id="btn-newsletter">Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FORMULÁRIO DE CADASTRO ====================== -->
+    <section class="secao-cadastro" id="cadastro">
+        <div class="titulo-sobre">
+            <hr>
+            <h2>CADASTRE-SE</h2>
+            <hr>
+        </div>
+        <p class="sub-novidades">Crie sua conta e comece sua assinatura hoje mesmo</p>
+
+        <div class="form-container">
+            <form id="form-cadastro" novalidate>
+
+                <!-- Nome completo -->
+                <div class="form-grupo">
+                    <label for="nome">Nome completo <span class="obrigatorio">*</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name">
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-grupo">
+                    <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email">
+                </div>
+
+                <!-- CPF -->
+                <div class="form-grupo">
+                    <label for="cpf">CPF <span class="obrigatorio">*</span></label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off">
+                </div>
+
+                <!-- Telefone -->
+                <div class="form-grupo">
+                    <label for="telefone">Telefone / WhatsApp <span class="obrigatorio">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="15" autocomplete="tel">
+                </div>
+
+                <!-- Data de nascimento -->
+                <div class="form-grupo">
+                    <label for="nascimento">Data de nascimento <span class="obrigatorio">*</span></label>
+                    <input type="text" id="nascimento" name="nascimento" placeholder="dd/mm/aaaa" maxlength="10" autocomplete="bday">
+                </div>
+
+                <!-- Plano -->
+                <div class="form-grupo">
+                    <label for="plano">Plano desejado <span class="obrigatorio">*</span></label>
+                    <select id="plano" name="plano">
+                        <option value="">-- Selecione um plano --</option>
+                        <option value="cafe">Combo Café ☕</option>
+                        <option value="cha">Combo Chá 🍃</option>
+                        <option value="ambos">Combo Café + Chá 🌟</option>
+                    </select>
+                </div>
+
+                <!-- Frequência -->
+                <div class="form-grupo">
+                    <label>Frequência de entrega <span class="obrigatorio">*</span></label>
+                    <div class="radio-grupo">
+                        <label class="radio-label">
+                            <input type="radio" name="frequencia" value="mensal"> Mensal
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="frequencia" value="bimestral"> Bimestral
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="frequencia" value="trimestral"> Trimestral
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Senha -->
+                <div class="form-grupo">
+                    <label for="senha">Senha <span class="obrigatorio">*</span></label>
+                    <div class="senha-wrapper">
+                        <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" autocomplete="new-password">
+                        <button type="button" id="btn-toggle-senha" class="btn-olho" aria-label="Mostrar/ocultar senha">👁</button>
+                    </div>
+                    <div class="forca-senha" id="forca-senha">
+                        <div class="barra" id="barra-forca"></div>
+                        <span id="label-forca"></span>
+                    </div>
+                </div>
+
+                <!-- Confirmar senha -->
+                <div class="form-grupo">
+                    <label for="confirma-senha">Confirmar senha <span class="obrigatorio">*</span></label>
+                    <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Repita a senha" autocomplete="new-password">
+                </div>
+
+                <!-- Termos -->
+                <div class="form-grupo form-grupo-check">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Concordo com os <a href="#" class="link-termos">Termos de Uso</a> e a <a href="#" class="link-termos">Política de Privacidade</a> <span class="obrigatorio">*</span></label>
+                </div>
+
+                <button type="submit" class="btn-hero btn-submit">Criar minha conta</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Diálogos jQuery UI -->
+    <div id="dialogo-erro" title="Atenção — verifique os dados">
+        <p id="dialogo-mensagem"></p>
     </div>
-</footer>
- 
-<script>
-  document.querySelectorAll('.menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('menu-toggle').checked = false;
+
+    <div id="dialogo-sucesso" title="Bem-vindo ao Chá-Fé Club! ☕">
+        <p>Seu cadastro foi realizado com sucesso!</p>
+        <p>Em breve você receberá um e-mail de confirmação. Prepare-se para uma experiência sensorial única a cada mês.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Chá-Fé Club</h2>
+                <p>© 2026 Club de assinaturas Chá-Fé.<br>Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-contato">
+                <h4>Contato</h4>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                    (21) 99999-9999
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.842L.057 23.428a.5.5 0 0 0 .609.61l5.652-1.484A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.513-5.163-1.408l-.36-.214-3.755.985.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                    (21) 99999-9999
+                </p>
+            </div>
+            <div class="footer-redes">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        Instagram
+                    </a>
+                    <a href="https://facebook.com/seuperfil" target="_blank" aria-label="Facebook" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+                        Facebook
+                    </a>
+                    <a href="https://wa.me/5521999999999" target="_blank" aria-label="WhatsApp" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.842L.057 23.428a.5.5 0 0 0 .609.61l5.652-1.484A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.513-5.163-1.408l-.36-.214-3.755.985.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script>
+    $(function () {
+
+        /* ---- Fechar menu ao clicar em link ---- */
+        $('.menu a').on('click', function () {
+            $('#menu-toggle').prop('checked', false);
+        });
+
+        /* ---- Configuração dos diálogos jQuery UI ---- */
+        $('#dialogo-erro').dialog({
+            autoOpen: false,
+            modal: true,
+            resizable: false,
+            draggable: false,
+            width: 380,
+            classes: {
+                'ui-dialog': 'dialogo-customizado dialogo-erro-estilo',
+                'ui-dialog-titlebar': 'dialogo-titulo-erro'
+            },
+            buttons: [{
+                text: 'Entendi',
+                click: function () { $(this).dialog('close'); },
+                class: 'btn-dialogo'
+            }]
+        });
+
+        $('#dialogo-sucesso').dialog({
+            autoOpen: false,
+            modal: true,
+            resizable: false,
+            draggable: false,
+            width: 400,
+            classes: {
+                'ui-dialog': 'dialogo-customizado dialogo-sucesso-estilo',
+                'ui-dialog-titlebar': 'dialogo-titulo-sucesso'
+            },
+            buttons: [{
+                text: '🎉 Ir para o início',
+                click: function () {
+                    $(this).dialog('close');
+                    $('html, body').animate({ scrollTop: 0 }, 600);
+                },
+                class: 'btn-dialogo'
+            }]
+        });
+
+        /* ===========================
+           HELPERS DE VALIDAÇÃO
+        =========================== */
+        function mostrarErro(msg) {
+            $('#dialogo-mensagem').text(msg);
+            $('#dialogo-erro').dialog('open');
+        }
+
+        function validarEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function validarCPF(cpf) {
+            cpf = cpf.replace(/\D/g, '');
+            if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
+            let soma = 0, resto;
+            for (let i = 1; i <= 9; i++) soma += parseInt(cpf[i - 1]) * (11 - i);
+            resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            if (resto !== parseInt(cpf[9])) return false;
+            soma = 0;
+            for (let i = 1; i <= 10; i++) soma += parseInt(cpf[i - 1]) * (12 - i);
+            resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            return resto === parseInt(cpf[10]);
+        }
+
+        function validarData(data) {
+            var partes = data.split('/');
+            if (partes.length !== 3) return false;
+            var dia = parseInt(partes[0], 10);
+            var mes = parseInt(partes[1], 10);
+            var ano = parseInt(partes[2], 10);
+            if (isNaN(dia) || isNaN(mes) || isNaN(ano)) return false;
+            if (mes < 1 || mes > 12 || dia < 1 || dia > 31) return false;
+            var hoje = new Date();
+            var nascimento = new Date(ano, mes - 1, dia);
+            if (nascimento > hoje) return false;
+            var idade = hoje.getFullYear() - nascimento.getFullYear();
+            var m = hoje.getMonth() - nascimento.getMonth();
+            if (m < 0 || (m === 0 && hoje.getDate() < nascimento.getDate())) idade--;
+            return idade >= 18;
+        }
+
+        function avaliarSenha(senha) {
+            var forca = 0;
+            if (senha.length >= 8) forca++;
+            if (/[A-Z]/.test(senha)) forca++;
+            if (/[0-9]/.test(senha)) forca++;
+            if (/[^A-Za-z0-9]/.test(senha)) forca++;
+            return forca;
+        }
+
+        /* ===========================
+           MÁSCARAS DE ENTRADA
+        =========================== */
+        $('#cpf').on('input', function () {
+            var v = $(this).val().replace(/\D/g, '').substring(0, 11);
+            v = v.replace(/(\d{3})(\d)/, '$1.$2');
+            v = v.replace(/(\d{3})(\d)/, '$1.$2');
+            v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+            $(this).val(v);
+        });
+
+        $('#telefone').on('input', function () {
+            var v = $(this).val().replace(/\D/g, '').substring(0, 11);
+            if (v.length <= 10) {
+                v = v.replace(/(\d{2})(\d)/, '($1) $2');
+                v = v.replace(/(\d{4})(\d)/, '$1-$2');
+            } else {
+                v = v.replace(/(\d{2})(\d)/, '($1) $2');
+                v = v.replace(/(\d{5})(\d)/, '$1-$2');
+            }
+            $(this).val(v);
+        });
+
+        $('#nascimento').on('input', function () {
+            var v = $(this).val().replace(/\D/g, '').substring(0, 8);
+            v = v.replace(/(\d{2})(\d)/, '$1/$2');
+            v = v.replace(/(\d{2})(\d)/, '$1/$2');
+            $(this).val(v);
+        });
+
+        /* ===========================
+           FORÇA DA SENHA
+        =========================== */
+        $('#senha').on('input', function () {
+            var senha = $(this).val();
+            var forca = avaliarSenha(senha);
+            var cores = ['', '#e74c3c', '#e67e22', '#f1c40f', '#2ecc71'];
+            var labels = ['', 'Fraca', 'Razoável', 'Boa', 'Forte'];
+            var larguras = ['0%', '25%', '50%', '75%', '100%'];
+            if (senha.length === 0) {
+                $('#barra-forca').css({ width: '0%', backgroundColor: '' });
+                $('#label-forca').text('');
+            } else {
+                $('#barra-forca').css({ width: larguras[forca], backgroundColor: cores[forca] });
+                $('#label-forca').text(labels[forca]).css('color', cores[forca]);
+            }
+        });
+
+        /* ===========================
+           MOSTRAR/OCULTAR SENHA
+        =========================== */
+        $('#btn-toggle-senha').on('click', function () {
+            var input = $('#senha');
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+                $(this).text('🙈');
+            } else {
+                input.attr('type', 'password');
+                $(this).text('👁');
+            }
+        });
+
+        /* ===========================
+           VALIDAÇÃO DO FORMULÁRIO
+        =========================== */
+        $('#form-cadastro').on('submit', function (e) {
+            e.preventDefault();
+
+            var nome = $.trim($('#nome').val());
+            var email = $.trim($('#email').val());
+            var cpf = $('#cpf').val();
+            var telefone = $('#telefone').val().replace(/\D/g, '');
+            var nascimento = $.trim($('#nascimento').val());
+            var plano = $('#plano').val();
+            var frequencia = $('input[name="frequencia"]:checked').val();
+            var senha = $('#senha').val();
+            var confirmaSenha = $('#confirma-senha').val();
+            var termos = $('#termos').is(':checked');
+
+            // -- Nome
+            if (nome.length < 3) {
+                mostrarErro('Por favor, informe seu nome completo (mínimo 3 caracteres).');
+                $('#nome').focus();
+                return;
+            }
+            if (!/\s/.test(nome)) {
+                mostrarErro('Informe seu nome e sobrenome.');
+                $('#nome').focus();
+                return;
+            }
+
+            // -- E-mail
+            if (!validarEmail(email)) {
+                mostrarErro('O e-mail informado não é válido. Exemplo: nome@dominio.com');
+                $('#email').focus();
+                return;
+            }
+
+            // -- CPF
+            if (!validarCPF(cpf)) {
+                mostrarErro('O CPF informado é inválido. Verifique os dígitos e tente novamente.');
+                $('#cpf').focus();
+                return;
+            }
+
+            // -- Telefone
+            if (telefone.length < 10 || telefone.length > 11) {
+                mostrarErro('Informe um telefone válido com DDD. Exemplo: (21) 99999-9999');
+                $('#telefone').focus();
+                return;
+            }
+
+            // -- Data de nascimento
+            if (nascimento.length !== 10) {
+                mostrarErro('Informe sua data de nascimento no formato dd/mm/aaaa.');
+                $('#nascimento').focus();
+                return;
+            }
+            if (!validarData(nascimento)) {
+                mostrarErro('Data de nascimento inválida ou você precisa ter pelo menos 18 anos para se cadastrar.');
+                $('#nascimento').focus();
+                return;
+            }
+
+            // -- Plano
+            if (!plano) {
+                mostrarErro('Selecione um plano de assinatura para continuar.');
+                $('#plano').focus();
+                return;
+            }
+
+            // -- Frequência
+            if (!frequencia) {
+                mostrarErro('Escolha a frequência de entrega desejada.');
+                return;
+            }
+
+            // -- Senha
+            if (senha.length < 8) {
+                mostrarErro('A senha deve ter no mínimo 8 caracteres.');
+                $('#senha').focus();
+                return;
+            }
+            if (avaliarSenha(senha) < 2) {
+                mostrarErro('Sua senha é muito fraca. Use letras maiúsculas, números ou caracteres especiais para fortalecê-la.');
+                $('#senha').focus();
+                return;
+            }
+
+            // -- Confirmar senha
+            if (senha !== confirmaSenha) {
+                mostrarErro('As senhas não coincidem. Por favor, verifique e tente novamente.');
+                $('#confirma-senha').focus();
+                return;
+            }
+
+            // -- Termos
+            if (!termos) {
+                mostrarErro('Você precisa aceitar os Termos de Uso e a Política de Privacidade para continuar.');
+                return;
+            }
+
+            // ✅ Tudo válido — exibir diálogo de sucesso e resetar formulário
+            $('#form-cadastro')[0].reset();
+            $('#barra-forca').css({ width: '0%' });
+            $('#label-forca').text('');
+            $('#dialogo-sucesso').dialog('open');
+        });
+
+        /* ===========================
+           NEWSLETTER INLINE
+        =========================== */
+        $('#btn-newsletter').on('click', function () {
+            var email = $.trim($('#nl-email').val());
+            if (!validarEmail(email)) {
+                mostrarErro('Informe um e-mail válido para assinar a newsletter.');
+                $('#nl-email').focus();
+                return;
+            }
+            $('#dialogo-mensagem').html('✅ E-mail <strong>' + email + '</strong> cadastrado com sucesso na newsletter!');
+            $('#dialogo-erro')
+                .dialog('option', 'title', 'Newsletter — sucesso!')
+                .dialog('open');
+            $('#dialogo-erro').dialog('option', 'title', 'Atenção — verifique os dados');
+            $('#nl-email').val('');
+        });
+
     });
-  });
+    </script>
 
-</script>
 </body>
 </html>
