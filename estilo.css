@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ===================== RESET & BASE ===================== */
 * {
     box-sizing: border-box;
 }
@@ -10,15 +11,15 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* ===================== HEADER ===================== */
 header {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#FAF8F6;
+    background-color: #FAF8F6;
     height: 80px;
     text-align: center;
-
 }
 
 header h1 {
@@ -28,38 +29,32 @@ header h1 {
     font-weight: normal;
 }
 
+/* ===================== HERO ===================== */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
-    /* border: 1px solid brown; */
-
 }
 
-.box-img 
-{ 
+.box-img {
     display: flex;
     justify-content: center;
     width: 35%;
     height: 390px;
-    /* border: 1px solid blue; */
 }
 
-.box-txt 
-{ 
+.box-txt {
     display: flex;
     flex-flow: row wrap;
     width: 40%;
-    /* border: 1px solid green; */
 }
 
-.box-txt span { 
+.box-txt span {
     color: black;
     letter-spacing: 5px;
     text-transform: uppercase;
-
 }
 
 .box-txt h2 {
@@ -73,45 +68,35 @@ header h1 {
 }
 
 .box-txt p {
-    color:#A1887F;
+    color: #A1887F;
 }
 
-.btn-hero { 
-background-color: #73411F ;
-padding: 25px 15px;
-text-decoration: none;
- font-family: "Poppins", sans-serif;
- color: #eee8e1;
- border-radius: 9px;
- transition: 0.5s all;
- margin-bottom: 20px;
- 
+/* ===================== BOTÃO HERO ===================== */
+.btn-hero {
+    background-color: #73411F;
+    padding: 25px 15px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #eee8e1;
+    border-radius: 9px;
+    transition: 0.5s all;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .btn-hero:hover {
-background-color: yellowgreen;
-font-size: 18px;
-font-weight: bold;
-
-} 
-
-.box-item {
-    width: 30%;
-    height: 400px;
-    background-color: #E0C4A0;
-    margin: 5px;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 18px;
-    margin-top: 20px;
-
-
+    background-color: yellowgreen;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.sobre-nós { 
+/* ===================== SOBRE NÓS ===================== */
+.sobre-nós {
     font-family: "Poppins", sans-serif;
     display: flex;
-    justify-content:center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-flow: row wrap;
@@ -136,6 +121,7 @@ font-weight: bold;
     margin: 0 20px;
 }
 
+/* ===================== ESPECIALIDADES ===================== */
 .especialidades {
     display: flex;
     justify-content: center;
@@ -143,28 +129,38 @@ font-weight: bold;
     flex-flow: row wrap;
     width: 80%;
     margin-left: 10%;
-    /* border: 1px solid brown; */
-
 }
 
-.m-top { 
+.box-item {
+    width: 30%;
+    height: 400px;
+    background-color: #E0C4A0;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+
+.m-top {
     margin-top: 15px;
 }
 
+/* ===================== COMO FUNCIONA ===================== */
 .como-funciona {
     font-family: "Poppins", sans-serif;
     width: 80%;
     margin: 80px auto;
     text-align: center;
 }
- 
+
 .titulo-como {
     font-size: 1.4rem;
     font-weight: 600;
     color: #452815;
     margin: 0 0 3rem;
 }
- 
+
 .passos {
     display: flex;
     justify-content: center;
@@ -172,7 +168,7 @@ font-weight: bold;
     gap: 5rem;
     flex-wrap: wrap;
 }
- 
+
 .passo {
     display: flex;
     flex-direction: column;
@@ -180,7 +176,7 @@ font-weight: bold;
     max-width: 200px;
     gap: 0.75rem;
 }
- 
+
 .passo-icone {
     width: 72px;
     height: 72px;
@@ -191,7 +187,7 @@ font-weight: bold;
     border-radius: 50%;
     margin-bottom: 0.5rem;
 }
- 
+
 .passo h3 {
     font-size: 0.8rem;
     font-weight: 700;
@@ -200,7 +196,7 @@ font-weight: bold;
     text-transform: uppercase;
     margin: 0;
 }
- 
+
 .passo p {
     font-size: 0.8rem;
     color: #A1887F;
@@ -208,9 +204,7 @@ font-weight: bold;
     margin: 0;
 }
 
-
-/* ---------- Novidades ---------- */
- 
+/* ===================== NOVIDADES ===================== */
 .novidades {
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -221,9 +215,7 @@ font-weight: bold;
     margin-left: 10%;
     padding: 40px 0;
 }
- 
-/* Reutiliza .titulo-sobre já existente no CSS — nenhuma mudança necessária */
- 
+
 .sub-novidades {
     width: 100%;
     text-align: center;
@@ -232,8 +224,7 @@ font-weight: bold;
     margin: 0.5rem 0 2rem;
     letter-spacing: 1px;
 }
- 
-/* Banner do mês */
+
 .banner-mes {
     width: 100%;
     display: flex;
@@ -245,27 +236,26 @@ font-weight: bold;
     padding: 1.25rem 1.5rem;
     margin-bottom: 2rem;
 }
- 
+
 .banner-icone {
     font-size: 2rem;
     flex-shrink: 0;
 }
- 
+
 .banner-texto h3 {
     margin: 0 0 0.25rem;
     font-size: 1rem;
     font-weight: 600;
     color: #452815;
 }
- 
+
 .banner-texto p {
     margin: 0;
     font-size: 0.88rem;
     color: #A1887F;
     line-height: 1.5;
 }
- 
-/* Grid de cards */
+
 .grid-novidades {
     width: 100%;
     display: flex;
@@ -274,7 +264,7 @@ font-weight: bold;
     gap: 1rem;
     margin-bottom: 2rem;
 }
- 
+
 .card-nov {
     width: 30%;
     min-width: 220px;
@@ -282,7 +272,7 @@ font-weight: bold;
     border-radius: 18px;
     overflow: hidden;
 }
- 
+
 .card-nov-img {
     width: 100%;
     height: 110px;
@@ -291,49 +281,48 @@ font-weight: bold;
     justify-content: center;
     font-size: 2.5rem;
 }
- 
+
 .card-amber { background-color: #d4a96a; }
 .card-teal  { background-color: #a8d5bc; }
 .card-coral { background-color: #d4a09a; }
- 
+
 .card-nov-body {
     padding: 1rem 1.25rem;
     text-align: center;
 }
- 
+
 .card-nov-body h3 {
     font-size: 0.95rem;
     font-weight: 600;
     margin: 0.4rem 0;
     color: #452815;
 }
- 
+
 .card-nov-body p {
     font-size: 0.85rem;
     color: #5a3e2b;
     line-height: 1.5;
     margin: 0 0 0.75rem;
 }
- 
+
 .card-nov-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0.5rem;
 }
- 
+
 .card-data {
     font-size: 0.75rem;
     color: #8B6347;
 }
- 
-/* Botão menor para os cards — herda o .btn-hero existente */
+
 .btn-card-sm {
     padding: 8px 14px;
     font-size: 0.8rem;
     margin-bottom: 0;
 }
- 
+
 /* Badges */
 .badge {
     display: inline-block;
@@ -344,11 +333,11 @@ font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
- 
+
 .badge-new { background: #c8e6c9; color: #1b5e20; }
 .badge-ltd { background: #ffe0b2; color: #7c4b00; }
 .badge-tip { background: #e8eaf6; color: #283593; }
- 
+
 /* Newsletter */
 .newsletter {
     width: 100%;
@@ -358,20 +347,20 @@ font-weight: bold;
     text-align: center;
     background-color: #FAF8F6;
 }
- 
+
 .newsletter p {
     font-size: 0.9rem;
     color: #A1887F;
     margin: 0 0 1rem;
 }
- 
+
 .nl-row {
     display: flex;
     gap: 8px;
     justify-content: center;
     flex-wrap: wrap;
 }
- 
+
 .nl-row input {
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
@@ -384,19 +373,311 @@ font-weight: bold;
     outline: none;
     transition: border 0.3s;
 }
- 
+
 .nl-row input:focus {
     border-color: #73411F;
 }
 
+/* ===================== SEÇÃO CADASTRO ===================== */
+.secao-cadastro {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 80px auto;
+}
 
+.form-container {
+    width: 100%;
+    max-width: 620px;
+    background-color: #FAF8F6;
+    border: 1px solid #E0C4A0;
+    border-radius: 18px;
+    padding: 2.5rem 3rem;
+    margin: 2rem auto 0;
+}
+
+/* Grupos do formulário */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.form-grupo label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #452815;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.obrigatorio {
+    color: #c0392b;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo input[type="tel"],
+.form-grupo input[type="password"] {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    padding: 12px 14px;
+    border: 1px solid #E0C4A0;
+    border-radius: 9px;
+    background-color: #fff;
+    color: #452815;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-grupo input[type="text"]:focus,
+.form-grupo input[type="email"]:focus,
+.form-grupo input[type="tel"]:focus,
+.form-grupo input[type="password"]:focus {
+    border-color: #73411F;
+    box-shadow: 0 0 0 3px rgba(115, 65, 31, 0.12);
+}
+
+.form-grupo select {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    padding: 12px 14px;
+    border: 1px solid #E0C4A0;
+    border-radius: 9px;
+    background-color: #fff;
+    color: #452815;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.3s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23452815' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+.form-grupo select:focus {
+    border-color: #73411F;
+    box-shadow: 0 0 0 3px rgba(115, 65, 31, 0.12);
+}
+
+/* Radio buttons */
+.radio-grupo {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    color: #452815;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.radio-label input[type="radio"] {
+    accent-color: #73411F;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Senha com olhinho */
+.senha-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha-wrapper input {
+    flex: 1;
+    padding-right: 44px;
+}
+
+.btn-olho {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 4px;
+    line-height: 1;
+    color: #A1887F;
+    transition: color 0.2s;
+}
+
+.btn-olho:hover {
+    color: #73411F;
+}
+
+/* Barra de força da senha */
+.forca-senha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.barra {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e74c3c;
+    width: 0%;
+    transition: width 0.4s ease, background-color 0.4s ease;
+    flex: 1;
+}
+
+#label-forca {
+    font-size: 0.75rem;
+    font-weight: 600;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* Checkbox de termos */
+.form-grupo-check {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.form-grupo-check input[type="checkbox"] {
+    margin-top: 3px;
+    accent-color: #73411F;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.form-grupo-check label {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #5a3e2b;
+    line-height: 1.5;
+}
+
+.link-termos {
+    color: #73411F;
+    text-decoration: underline;
+}
+
+.link-termos:hover {
+    color: #452815;
+}
+
+/* Botão de submit */
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ===================== DIÁLOGOS JQUERY UI CUSTOMIZADOS ===================== */
+.dialogo-customizado {
+    font-family: "Poppins", sans-serif !important;
+    border-radius: 14px !important;
+    border: none !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden;
+}
+
+.dialogo-customizado .ui-dialog-content {
+    font-size: 0.92rem;
+    color: #452815;
+    line-height: 1.6;
+    padding: 1.2rem 1.5rem !important;
+}
+
+.dialogo-customizado .ui-dialog-buttonpane {
+    border-top: 1px solid #E0C4A0 !important;
+    background: #FAF8F6 !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* Título — erro */
+.dialogo-erro-estilo .ui-dialog-titlebar {
+    background-color: #c0392b !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 14px 18px !important;
+}
+
+.dialogo-erro-estilo .ui-dialog-title {
+    color: #fff !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+}
+
+.dialogo-erro-estilo .ui-dialog-titlebar-close {
+    color: #fff !important;
+}
+
+/* Título — sucesso */
+.dialogo-sucesso-estilo .ui-dialog-titlebar {
+    background-color: #73411F !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 14px 18px !important;
+}
+
+.dialogo-sucesso-estilo .ui-dialog-title {
+    color: #FAF8F6 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+}
+
+.dialogo-sucesso-estilo .ui-dialog-titlebar-close {
+    color: #FAF8F6 !important;
+}
+
+/* Botões dos diálogos */
+.btn-dialogo {
+    font-family: "Poppins", sans-serif !important;
+    background-color: #73411F !important;
+    color: #eee8e1 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s !important;
+}
+
+.btn-dialogo:hover {
+    background-color: #452815 !important;
+}
+
+/* Overlay do jQuery UI */
+.ui-widget-overlay {
+    background: rgba(0, 0, 0, 0.55) !important;
+    opacity: 1 !important;
+}
+
+/* ===================== FOOTER ===================== */
 footer {
     background-color: #eee8e1;
     padding: 50px 10%;
     margin-top: 100px;
     color: #4E342E;
 }
- 
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -404,8 +685,7 @@ footer {
     flex-wrap: wrap;
     gap: 2rem;
 }
- 
-/* Marca */
+
 .footer-brand h2 {
     font-family: "Imperial Script", cursive;
     font-size: 40px;
@@ -413,15 +693,14 @@ footer {
     font-weight: normal;
     margin: 0 0 0.5rem;
 }
- 
+
 .footer-brand p {
     font-size: 0.8rem;
     color: #A1887F;
     line-height: 1.6;
     margin: 0;
 }
- 
-/* Contato */
+
 .footer-contato h4,
 .footer-redes h4 {
     font-size: 0.8rem;
@@ -431,7 +710,7 @@ footer {
     margin: 0 0 1rem;
     font-weight: 600;
 }
- 
+
 .footer-contato p {
     display: flex;
     align-items: center;
@@ -440,19 +719,18 @@ footer {
     color: #4E342E;
     margin: 0 0 0.5rem;
 }
- 
+
 .footer-contato svg {
     flex-shrink: 0;
     color: #73411F;
 }
- 
-/* Redes sociais */
+
 .social-icons {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
- 
+
 .social-btn {
     display: flex;
     align-items: center;
@@ -462,35 +740,37 @@ footer {
     font-size: 0.9rem;
     transition: color 0.3s;
 }
- 
+
 .social-btn:hover {
     color: #73411F;
 }
- 
+
 .social-btn svg {
     flex-shrink: 0;
 }
- 
-.menu-hamburguer{
+
+/* ===================== MENU HAMBÚRGUER ===================== */
+.menu-hamburguer {
     position: absolute;
     top: 20px;
     right: 40px;
     z-index: 4;
-
 }
-#menu-toggle { 
+
+#menu-toggle {
     display: none;
 }
-.linha { 
+
+.linha {
     height: 4px;
     background-color: #361b0a;
     border-radius: 2px;
     transition: 0.3s;
 }
 
-.overlay { 
+.overlay {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -498,9 +778,9 @@ footer {
     z-index: 2;
     transform: scale(0);
     transition: 0.5s;
-
 }
-.menu-icon { 
+
+.menu-icon {
     width: 35px;
     height: 30px;
     display: flex;
@@ -509,112 +789,112 @@ footer {
     z-index: 5;
     position: relative;
     cursor: pointer;
-
-
 }
-.menu { 
+
+.menu {
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
     text-align: center;
 }
-.menu ul { 
+
+.menu ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.menu ul li { 
-margin: 20px 0;
+
+.menu ul li {
+    margin: 20px 0;
 }
-.menu a { 
+
+.menu a {
     text-decoration: none;
     font-size: 2rem;
     color: #ee975d;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.menu a:hover { 
+.menu a:hover {
     color: #73411F;
 }
 
-#menu-toggle:checked + .menu-icon .linha:nth-child(1)  { 
+#menu-toggle:checked + .menu-icon .linha:nth-child(1) {
     transform: rotate(45deg) translate(13px, 13px);
 }
 
-#menu-toggle:checked + .menu-icon .linha:nth-child(2)  { 
+#menu-toggle:checked + .menu-icon .linha:nth-child(2) {
     opacity: 0;
 }
 
-#menu-toggle:checked + .menu-icon .linha:nth-child(3)  { 
+#menu-toggle:checked + .menu-icon .linha:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-#menu-toggle:checked ~.overlay { 
+#menu-toggle:checked ~ .overlay {
     transform: scale(1);
 }
 
+/* ===================== RESPONSIVO ===================== */
 @media screen and (max-width: 1200px) {
-    .header h1 {
-        font-size: 45px;
+
+    .hero {
+        flex-direction: column-reverse;
     }
 
-   .hero { 
-    flex-direction: column-reverse;
-   }
+    .box-txt {
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
-   .box-txt {
-    flex-flow:column wrap;
-    width: 100%;
-    padding: 40px 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-   }
+    .box-txt h2 {
+        font-size: 50px;
+    }
 
-   .box-txt h2 {
-    font-size: 50px;
-   }
+    .box-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-   .box-img {
-    width: 100%;
-    margin-bottom: 40px;
-   }
+    .responsiva {
+        max-width: 100%;
+    }
 
-   .responsiva { 
-    max-width: 100%;
-   }
+    .box-txt p {
+        text-align: center;
+    }
 
-   .box-txt p {
-    text-align: center;
-   }
-
-   .box-item {
-    width: 90%;
-   }
+    .box-item {
+        width: 90%;
+    }
 
     .card-nov {
         width: 90%;
     }
- 
+
     .banner-mes {
         flex-direction: column;
         text-align: center;
     }
 
-     .passos {
+    .passos {
         gap: 3rem;
     }
- 
+
     .passo {
         max-width: 80%;
     }
- 
+
     .card-nov-footer {
         justify-content: center;
         gap: 1rem;
     }
- 
+
     .nl-row input {
         width: 100%;
     }
@@ -622,19 +902,39 @@ margin: 20px 0;
     footer {
         padding: 40px 7%;
     }
- 
+
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
- 
+
     .footer-contato p {
         justify-content: center;
     }
- 
+
     .social-icons {
         align-items: center;
     }
+
+    /* Formulário responsivo */
+    .form-container {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .radio-grupo {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
 }
 
+@media screen and (max-width: 600px) {
+    .secao-cadastro {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .form-container {
+        padding: 1.5rem 1rem;
+    }
+}
